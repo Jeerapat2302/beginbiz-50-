@@ -108,7 +108,7 @@
 
 		  </div>
 		  
-		  <a class="btn btn-ghost text-xl" href="/home">
+		  <a class="btn btn-ghost text-xl" href="/">
 			<img src={logo_beginbiz} alt="Company logo"class="w-40 object-center"/></a>
 
 		</div>

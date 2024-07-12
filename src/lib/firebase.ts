@@ -2,7 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getDatabase } from "firebase/database";
 import { getStorage, ref } from "firebase/storage";
-
 import { getAuth } from "firebase/auth";
 import type { Readable } from "svelte/motion";
 import { derived } from "svelte/store";
@@ -10,14 +9,14 @@ import { docStore, userStore } from "sveltefire";
 
 
 const firebaseConfig = {
-	apiKey: "AIzaSyDVFbjykYdUu85xTX1xOhk35lwIrmtoMwA",
-	authDomain: "beginbiz-v2.firebaseapp.com",
-	databaseURL: "https://beginbiz-v2-default-rtdb.asia-southeast1.firebasedatabase.app",
-	projectId: "beginbiz-v2",
-	storageBucket: "beginbiz-v2.appspot.com",
-	messagingSenderId: "162567978975",
-	appId: "1:162567978975:web:5fe5fcbc9b22a0b2794e6a",
-	measurementId: "G-MBN2FKPBD5"
+	apiKey: "AIzaSyCM0_iA4_6oRLx9rOdmGFIZtgyI8-Ihr3c",
+	authDomain: "beginbiz-v3.firebaseapp.com",
+	databaseURL: "https://beginbiz-v3-default-rtdb.asia-southeast1.firebasedatabase.app",
+	projectId: "beginbiz-v3",
+	storageBucket: "beginbiz-v3.appspot.com",
+	messagingSenderId: "462312147050",
+	appId: "1:462312147050:web:ec09891513a2916be7e213",
+	measurementId: "G-YBL899MY7M"
   };
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);

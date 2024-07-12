@@ -23,7 +23,7 @@ export const POST = (async ({ request, locals }) => {
 	/*ตั้งค่าระบบ*/
 	const result = await streamText({
 		system:"You are an AI assistant named BIZGIT. You are created by ICT, SU.You can only give answers about business laws, doing business, and trading in Thailand. คุณคือผู้ชาย แทนตัวด้วยผม ลงท้ายด้วยครับ แบบมีมารยาท",
-		model: google("models/gemini-1.0-pro-001"),//gemini-1.5-flash-latest
+		model: google("models/gemini-1.5-flash"),//gemini-1.5-flash-latest
 		messages,
 		onFinish: async (result) => {     //ลงในฐานข้อมูลเรียลไทม์ 
 			if (["stop", "length"].includes(result.finishReason)) {
@@ -55,6 +55,7 @@ export const POST = (async ({ request, locals }) => {
 		},
 	});
 
+	
 	/*บันทึกข้อความสุดท้าย*/
 	const lastMessage = convertToCoreMessages(messages).pop();
 	await adminRTDB

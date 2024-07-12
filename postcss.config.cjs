@@ -11,9 +11,4 @@ const config = {
 };
 
 module.exports = config;
-// module.exports = {
-//   //...
-//   daisyui: {
-//     themes: ["night"],
-//   },
-// }
+
